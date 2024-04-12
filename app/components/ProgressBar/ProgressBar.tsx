@@ -22,7 +22,7 @@ export const ProgressBar = ({total, current, ...rest}: ProgressBarProps) => {
 
 const styles = StyleSheet.create({
     progressBar: {
-        width: '100%',
+        width: "100%",
         height: 29,
         borderRadius: 5,
         backgroundColor: Colors.WHITE,

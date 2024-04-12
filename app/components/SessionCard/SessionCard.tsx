@@ -11,9 +11,11 @@ export type SessionCardProps = {
     end: number;
     place: Location;
     totalCost: number;
+    totalMember: number;
+    currentMemeber: number;
 }
 
-export const SessionCard = ({date, place, totalCost, start, end}: SessionCardProps) => {
+export const SessionCard = ({date, place, totalCost, start, end, totalMember, currentMemeber}: SessionCardProps) => {
     return (
         <Card style={styles.card}>
             <Text style={styles.header} >{format(date, 'LLLL dd, yyyy (iii)')}</Text>
@@ -30,7 +32,7 @@ export const SessionCard = ({date, place, totalCost, start, end}: SessionCardPro
                 <Text style={styles.rowValue}>{totalCost}</Text>
             </View>
             <Text style={styles.rowName}>Received fee</Text>
-            <ProgressBar progress={16/17} total={17} current={16}/>
+            <ProgressBar progress={currentMemeber/totalMember} total={totalMember} current={currentMemeber}/>
         </Card>
     )
 }
