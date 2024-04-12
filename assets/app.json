@@ -1,0 +1,18 @@
+{
+  "name": "operto",
+  "display": "Operto",
+  "colors": {
+    "primary": "#5469F8",
+    "accent": "#004DFF",
+    "secondary": "#FFFFFF",
+    "tertiary": "#000000",
+    "success": "#009513",
+    "warning": "#ff6800",
+    "error": "#972D2D",
+    "progress": "#B5BFFF",
+    "white": "#FFFFFF",
+    "lightgrey": "#D3D3D3",
+    "grey": "#737373",
+    "black": "#000000"
+  }
+}
